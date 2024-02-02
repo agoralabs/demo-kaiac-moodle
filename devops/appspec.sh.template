@@ -23,5 +23,8 @@ else
     aws ecr get-login-password --region $aws_region | docker login --username AWS --password-stdin $docker_repository
 fi
 
+#arret des containers
+docker compose -f $source_folder/devops/docker-compose.yml down
+
 #lancement des containers
 docker compose -f $source_folder/devops/docker-compose.yml up -d --build --force-recreate

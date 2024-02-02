@@ -15,7 +15,7 @@ services:
     ports:
       - "3306:3306"
   moodle:
-    image: "webdevops/php-apache:7.3"
+    image: "webdevops/php-apache:8.2"
     networks:
       - moodle-net
     environment:
