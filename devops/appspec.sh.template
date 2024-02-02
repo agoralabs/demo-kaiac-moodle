@@ -24,4 +24,4 @@ else
 fi
 
 #lancement des containers
-docker compose -f $source_folder/docker-compose.yml up -d --build --force-recreate
+docker compose -f $source_folder/devops/docker-compose.yml up -d --build --force-recreate
