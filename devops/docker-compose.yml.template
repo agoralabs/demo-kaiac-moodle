@@ -25,7 +25,7 @@ services:
       - MOODLE_DBPASS=''
       - MOODLE_DBNAME=bitnami_moodle
     ports:
-      - "${TF_VAR_ENV_APP_BE_LOCAL_PORT}:443"
+      - "${TF_VAR_ENV_APP_BE_LOCAL_PORT}:80"
       - "443:443"
     volumes:
       - type: bind
