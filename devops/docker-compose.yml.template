@@ -29,7 +29,7 @@ services:
       - "443:443"
     volumes:
       - type: bind
-        source: /root/moodle_data
+        source: /kaiac/moodle_data
         target: /moodledata/moodledata
       - type: bind
         source: ${TF_VAR_ENV_APP_BE_LOCAL_SOURCE_FOLDER}

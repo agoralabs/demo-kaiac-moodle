@@ -12,8 +12,9 @@ docker_repository="$TF_VAR_ENV_APP_GL_DOCKER_REPOSITORY"
 mkdir -p /root/maria_data
 chmod 777 /root/maria_data
 
-mkdir -p /root/moodle_data
-chmod 777 /root/moodle_data
+mkdir -p /kaiac/moodle_data
+chmod 777 /kaiac
+chmod 777 /kaiac/moodle_data
 
 #connexion au repo docker AWS
 if [ "$docker_repository" == "docker.io" ] 
